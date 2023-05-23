@@ -1,5 +1,4 @@
-
-  .page-home{
+.page-selection{
     position: absolute;
     top: 10em;
     left: 30em;
@@ -14,19 +13,19 @@
     align-items: center;
     text-align: center;
   }
-  
-  .page-home h1{
+
+  .page-selection h1{
     font-size: 1.2em;
     font-weight: normal;
   
     padding-bottom: 2em;
   }
   
-  .page-home p{
+  .page-selection p{
     color: white;
   }
   
-  .page-home a{
+  .page-selection a{
     color: white;
   }
   
@@ -35,25 +34,3 @@
     color: #000000;
     cursor: pointer;
   }
-
-  
-.container-title {
-  position: absolute;
-  top: 14em;
-  left: 8em;
-  
-  width: 22em;
-  height: 15em;
-}
-.container-title h1{
-  color: white;  
-  font-family: 'Inter', sans-serif; 
-  font-weight: 500; 
-  font-size: 3em;
-}
-
-.container-title h1 span{
-  font-weight: bold; 
-  text-transform: uppercase;
-  color: #3C5098;  
-}

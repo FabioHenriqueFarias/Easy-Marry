@@ -1,5 +1,6 @@
 import Logo from "@/components/Logo/Logo";
 import Head from "next/head";
+import Link from "next/link";
 
 export default function TypeSelection(){
     return (
@@ -12,8 +13,10 @@ export default function TypeSelection(){
             <header>
                 <Logo />
             </header>
-            <main>
+            <main className="page-selection">
                 <h1>Escolha seu Tipo de Cadastro</h1>
+                <p><Link href='/supplierregistration'>Você é fornecedor</Link></p>
+                <p><Link href='/userregistration'>Acesso para fornecedores</Link></p>
             </main>
        </> 
     );
