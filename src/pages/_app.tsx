@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import '@/components/Login/login.css';
 import '@/components/Logo/logo.css';
+import '@/components/Form/form.css';
 import '@/styles/index.css';
 import '@/styles/header.css';
 import '@/styles/selection.css';

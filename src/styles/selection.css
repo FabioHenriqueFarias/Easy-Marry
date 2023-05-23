@@ -15,19 +15,28 @@
   }
 
   .page-selection h1{
-    font-size: 1.2em;
-    font-weight: normal;
-  
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #b6b2b2;
     padding-bottom: 2em;
   }
   
-  .page-selection p{
-    color: white;
-  }
-  
   .page-selection a{
-    color: white;
+    color: rgb(0, 0, 0);
   }
+
+  .page-selection button{
+
+    margin: 1em;
+    display: block;
+    width: 250px;
+    background-color: #B8C8EC;
+    color: black;
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer; 
+}
   
   a{
     text-decoration: none;

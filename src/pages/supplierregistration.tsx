@@ -1,3 +1,5 @@
+import Form from "@/components/Form/Form";
+import Logo from "@/components/Logo/Logo";
 import Head from "next/head";
 
 export default function SupplierRegistration(){
@@ -9,7 +11,8 @@ export default function SupplierRegistration(){
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
             </Head>
             <header>
-
+                <Logo/>
+                <Form/>
             </header>
        </> 
     );

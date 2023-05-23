@@ -1,27 +1,50 @@
-form {
-    display: inline-block;
+.login-page-index {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 50px;
     padding: 20px;
+    text-align: center;
 }
   
-input[type="email"],
-input[type="password"] {
-  width: 100%;
+.login-page-index input[type="email"],
+.login-page-index input[type="password"] {
+  /* width: 10em;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
-  box-sizing: border-box;
+  box-sizing: border-box; */
+
+  text-align: 50px;
+  background-color: #E1E5EF;
+  border-radius: 8px;
+  margin: 1em;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  width: 250px;
+  border-color: transparent;
+  border: none;
 }
-button[type="submit"] {
+
+.login-page-index button[type="submit"] {
+  display: block;
+  width: 250px;
   background-color: #B8C8EC;
   color: black;
-  padding: 10px;
+  padding: 1em;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
-button[type="submit"]:hover {
+
+.login-page-index button[type="submit"]:hover {
   background-color: #3c5098;
+}
+
+.login-page-index p{
+  margin: 1em;
 }
 

@@ -57,3 +57,13 @@
   text-transform: uppercase;
   color: #3C5098;  
 }
+
+.container-register{
+  margin-top: 25px;
+  
+}
+
+.container-register p{
+  font-family: 'Inter', sans-serif; 
+  padding: .3em;
+}
