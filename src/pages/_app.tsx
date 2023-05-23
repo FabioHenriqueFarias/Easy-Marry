@@ -1,6 +1,6 @@
 import '@/styles/globals.css'
-import '@/styles/logo.css'
-import '@/styles/login.css'
+import '@/components/Login/login.css'
+import '@/components/Logo/logo.css'
 
 import type { AppProps } from 'next/app'
 
