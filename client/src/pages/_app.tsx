@@ -5,6 +5,8 @@ import '@/components/Form/form.css';
 import '@/styles/index.css';
 import '@/styles/header.css';
 import '@/styles/selection.css';
+import '@/components/Post/post.css';
+import '@/components/Posts/posts.css';
 
 import type { AppProps } from 'next/app'
 
