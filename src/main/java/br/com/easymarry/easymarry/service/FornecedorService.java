@@ -18,5 +18,9 @@ public class FornecedorService {
         return fornecedorRepository.findAll();
     }
 
+    public Fornecedor save(Fornecedor fornecedor) {
+        return fornecedorRepository.save(fornecedor);
+    }
+
     // Adicionar outros métodos conforme necessário, como save, update, delete, findById, etc.
 }
