@@ -27,3 +27,10 @@ export type CreateSupplier = {
     telefone: string;
     endereco: string;
 }
+
+export type EditedData = {
+    email: string;
+    endereco: string;
+    telefone: string;
+    descricao: string;
+  }

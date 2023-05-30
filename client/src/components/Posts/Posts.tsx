@@ -6,46 +6,34 @@ import SupplierPost from "../Post/post";
 
 export default function Post(){
 
-    let teste: Supplier = {
-      id: 45,
+  let teste:Supplier = {
+    
+      id: 1,
       nome: "Nome do Fornecedor",
       email: "email@example.com",
+      senha: "senha123",
       descricao: "Descrição do fornecedor",
+      categoria: "Categoria do fornecedor",
       telefone: "123456789",
       endereco: "Endereço do fornecedor",
-      senha: "45",
-      categoria: "Categoria do fornecedor",
+  }
 
-    }
 
-    let teste1: Supplier = {
-      id: 46,
-      nome: "Nome do Fornecedor",
-      email: "email@example.com",
-      descricao: "Descrição do fornecedor",
-      telefone: "123456789",
-      endereco: "Endereço do fornecedor",
-      senha: "45",
-      categoria: "Categoria do fornecedor",
+    const [suppliers, setSuppliers] = useState<Supplier[]>([teste]);
 
-    }
+    useEffect(() => {
+        async function fetchData() {
+          try {
+            const response = await axios.get<Supplier[]>('http://localhost:8080/api/fornecedores');
+            const suppliersData = response.data;
+            setSuppliers(suppliersData);
+          } catch (error) {
+            console.error('Erro ao obter dados da API:', error);
+          }
 
-    const [suppliers, setSuppliers] = useState<Supplier[]>([teste, teste1, teste1,teste1,teste1, teste1, teste1, teste1, teste1]);
-
-    // useEffect(() => {
-    //     async function fetchData() {
-    //       try {
-    //         const response = await axios.get<Supplier[]>('http://localhost:8080/api/fornecedores');
-    //         const suppliersData = response.data;
-    //         setSuppliers(suppliersData);
-    //         // Restante do código para utilizar os dados obtidos
-    //       } catch (error) {
-    //         console.error('Erro ao obter dados da API:', error);
-    //       }
-
-    //     }
-    //       fetchData();
-    // }, []);
+        }
+          fetchData();
+    }, []);
     
 
     return(

@@ -22,5 +22,17 @@ public class FornecedorService {
         return fornecedorRepository.save(fornecedor);
     }
 
+    public Fornecedor update(Fornecedor fornecedor) {
+        return fornecedorRepository.save(fornecedor);
+    }
+
+    public void deleteById(Long id) {
+        fornecedorRepository.deleteById(id);
+    }
+
+    public Fornecedor findById(Long id) {
+        return fornecedorRepository.findById(id).orElse(null);
+    }
+
     // Adicionar outros métodos conforme necessário, como save, update, delete, findById, etc.
 }
