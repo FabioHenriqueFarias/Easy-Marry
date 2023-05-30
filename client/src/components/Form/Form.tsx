@@ -1,18 +1,12 @@
-import { useEffect, useState } from "react";
+import  { useState } from "react";
+import axios from "axios";
+import { CreateSupplier } from "@/utils/types";
 
 export default function Form(){
 
-    type Supplier = {
-        nome: string;
-        email: string;
-        senha: string;
-        descricao: string;
-        categoria: string;
-        telefone: string;
-        endereco: string;
-    }
+    
 
-    const [suppliers, setSuppliers] = useState<Supplier[]>([]);
+    const [suppliers, setSuppliers] = useState<CreateSupplier[]>([]);
 
     const [nome, setNome] = useState('');
     const [email, setEmail] = useState('');
@@ -22,10 +16,10 @@ export default function Form(){
     const [telefone, setTelefone] = useState('');
     const [endereco, setEndereco] = useState('');
 
-    const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
       
-        const supplier: Supplier = {
+        const supplier: CreateSupplier = {
           nome,
           email,
           senha,
@@ -33,15 +27,18 @@ export default function Form(){
           categoria,
           telefone,
           endereco
-        };
+          };
       
         setSuppliers([...suppliers, supplier]);
+
+        try {
+            await axios.post("http://localhost:8080/api/fornecedores", suppliers);
+            console.log("Dados enviados para a API com sucesso");
+          } catch (error) {
+            console.error("Erro ao enviar dados para a API:", error);
+          }
         
     };   
-
-    useEffect(() => {
-        console.log(suppliers);
-    }, [suppliers]);
 
     return (
         <form className="page-form" onSubmit={handleSubmit}>
@@ -50,7 +47,7 @@ export default function Form(){
             </div>
 
             <div className="form-group">
-                <input type="text" id="sobrenome" name="sobrenome" value={descricao} onChange={(event) => setDescricao(event.target.value)} required placeholder="Sobrenome"/>
+                <input type="text" id="descricao" name="descricao" value={descricao} onChange={(event) => setDescricao(event.target.value)} required placeholder="Descrição"/>
             </div>
 
             <div className="form-group">
@@ -62,7 +59,7 @@ export default function Form(){
             </div>
 
             <div className="form-group">
-                <input type="text" id="cpf" name="cpf" value={endereco} onChange={(event) => setEndereco(event.target.value)} required placeholder="CPF"/>
+                <input type="text" id="Endereco" name="Endereco" value={endereco} onChange={(event) => setEndereco(event.target.value)} required placeholder="Endereço"/>
             </div>
 
             <div className="form-group">

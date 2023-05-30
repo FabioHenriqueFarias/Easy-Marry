@@ -4,7 +4,7 @@ import '@/components/Logo/logo.css';
 import '@/components/Form/form.css';
 import '@/styles/index.css';
 import '@/styles/header.css';
-import '@/styles/selection.css';
+import '@/styles/typeselection.css';
 import '@/components/Post/post.css';
 import '@/components/Posts/posts.css';
 
