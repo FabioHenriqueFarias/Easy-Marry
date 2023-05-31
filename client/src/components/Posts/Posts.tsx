@@ -19,7 +19,7 @@ export default function Post(){
   }
 
 
-    const [suppliers, setSuppliers] = useState<Supplier[]>([teste]);
+    const [suppliers, setSuppliers] = useState<Supplier[]>([]);
 
     useEffect(() => {
         async function fetchData() {

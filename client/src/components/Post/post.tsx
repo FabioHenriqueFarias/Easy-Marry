@@ -35,6 +35,7 @@ export default function SupplierPost({id, nome, email, descricao, telefone, ende
     const handleDelete = async () => {
         try {
             await axios.delete(`http://localhost:8080/api/fornecedores/${id}`);
+            window.location.reload()
         } catch (error) {
             console.error("Erro ao excluir fornecedor:", error);
         }   
@@ -43,27 +44,31 @@ export default function SupplierPost({id, nome, email, descricao, telefone, ende
     return(
         <div className="post">
             <h1>{nome}</h1>
+            <label>Email</label>
             <input
                 name="email"
-                value={`Email: ${editedData.email}`}
+                value={`${editedData.email}`}
                 disabled={!isEditing}
                 onChange={handleInputChange}
             />
+            <label>Endereço</label>
             <input
                 name="endereco"
-                value={`Endereço: ${editedData.endereco}`}
+                value={`${editedData.endereco}`}
                 disabled={!isEditing}
                 onChange={handleInputChange}
             />
+            <label>Telefone</label>
             <input
                 name="telefone"
-                value={`Telefone: ${editedData.telefone}`}
+                value={`${editedData.telefone}`}
                 disabled={!isEditing}
                 onChange={handleInputChange}
             />
+            <label>Descrição</label>
             <input
                 name="descricao"
-                value={`Descrição: ${editedData.descricao}`}
+                value={`${editedData.descricao}`}
                 disabled={!isEditing}
                 onChange={handleInputChange}
             />

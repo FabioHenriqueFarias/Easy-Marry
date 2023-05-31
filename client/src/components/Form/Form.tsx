@@ -29,10 +29,10 @@ export default function Form(){
           endereco
           };
       
-        setSuppliers([...suppliers, supplier]);
+
 
         try {
-            await axios.post("http://localhost:8080/api/fornecedores", suppliers);
+            await axios.post("http://localhost:8080/api/fornecedores", supplier);
             console.log("Dados enviados para a API com sucesso");
           } catch (error) {
             console.error("Erro ao enviar dados para a API:", error);

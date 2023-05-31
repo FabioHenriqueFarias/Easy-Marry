@@ -25,6 +25,7 @@ export default function Home() {
           <h1>Entre em sua conta</h1>
           <div className="container-form">
             <p>Não tem uma conta? <Link href='/typeselection'>Clique Aqui!</Link></p>
+            <p>Lista de Fornecedores <Link href='/suppliers'>Clique Aqui!</Link></p>
             <Login />
            
           </div>
