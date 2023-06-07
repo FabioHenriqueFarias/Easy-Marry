@@ -1,6 +1,6 @@
 import  { useState } from "react";
 import axios from "axios";
-import { CreateSupplier } from "@/utils/types";
+import { CreateSupplier } from "@/utils/Types";
 
 export default function Form(){
 

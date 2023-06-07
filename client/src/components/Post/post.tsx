@@ -1,4 +1,4 @@
-import { EditedData, PostSupplier } from "@/utils/types";
+import { EditedData, PostSupplier } from "@/utils/Types";
 import axios from "axios";
 import { useState } from "react";
 

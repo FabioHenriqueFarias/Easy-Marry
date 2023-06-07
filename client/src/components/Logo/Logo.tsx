@@ -1,4 +1,4 @@
-import { LOGOIMAGE } from '@/utils/Patys';
+import { LOGOIMAGE } from '@/utils/ways';
 import Image from 'next/image';
 
 export default function Logo(){

@@ -22,9 +22,9 @@ public class Casal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome1;
+    private String nome_primeiraPessoa;
 
-    private String nome2;
+    private String nome_segundaPessoa;
 
     private String email;
 
