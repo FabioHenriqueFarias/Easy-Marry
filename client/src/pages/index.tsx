@@ -18,14 +18,16 @@ export default function Home() {
         <header>
           <Logo />        
         </header>
-        <div className="container-title">
-            <h1>Assim <br/> começa <br /> uma nova <br/><span>História</span></h1>
+        <div className="title-container">
+          <h1>
+            Assim começa uma nova <span>História</span>
+          </h1>
         </div>
         <main className='page-home'>
           <h1>Entre em sua conta</h1>
-          <div className="container-form">
+          <div className="container-register">
             <p>Não tem uma conta? <Link href='/typeselection'>Clique Aqui!</Link></p>
-            <p>Lista de Fornecedores <Link href='/suppliers'>Clique Aqui!</Link></p>
+            {/* <p>Lista de Fornecedores <Link href='/supplier/suppliers'>Clique Aqui!</Link></p> */}
             <Login />
            
           </div>

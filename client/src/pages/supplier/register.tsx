@@ -1,8 +1,7 @@
-import Form from "@/components/Form/Form";
 import Logo from "@/components/Logo/Logo";
 import Head from "next/head";
 
-export default function UserRegistration(){
+export default function SupplierRegistration(){
     return (
        <>
             <Head>
@@ -12,7 +11,6 @@ export default function UserRegistration(){
             </Head>
             <header>
                 <Logo/>
-                <Form/>
             </header>
        </> 
     );

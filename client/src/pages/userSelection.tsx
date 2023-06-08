@@ -15,13 +15,13 @@ export default function TypeSelection(){
             </header>
             <main className="page-selection">
                 <h1>Escolha seu Tipo de Cadastro</h1>
-                <div className="container-img-casal">
-                    <button><Link href='/supplierregistration'>Você é fornecedor</Link></button>
+                <div className="container-button-casal">
+                    <button><Link href='supplier/supplierregistration'>Você é fornecedor</Link></button>
                 </div>
                 
-                <div className="container-img-fornecedor"></div>
-                <button><Link href='/userregistration'>Acesso para fornecedores</Link></button>
-                
+                <div className="container-button-fornecedor">
+                    <button><Link href='couple/coupleregistration'>Você é um casal</Link></button>
+                </div>
             </main>
        </> 
     );
