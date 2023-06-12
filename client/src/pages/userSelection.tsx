@@ -16,7 +16,7 @@ export default function TypeSelection(){
             <main className="page-selection">
                 <h1>Escolha seu Tipo de Cadastro</h1>
                 <div className="container-button-casal">
-                    <button><Link href='supplier/supplierregistration'>Você é fornecedor</Link></button>
+                    <button><Link href='supplier/register'>Você é fornecedor</Link></button>
                 </div>
                 
                 <div className="container-button-fornecedor">

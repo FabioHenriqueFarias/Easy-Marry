@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Logo from '@/components/Logo/Logo';
-import Login from '@/components/Login/Login';
+import Login from '@/components/Login/LoginForm';
 
 
 export default function Home() {
@@ -26,7 +26,7 @@ export default function Home() {
         <main className='page-home'>
           <h1>Entre em sua conta</h1>
           <div className="container-register">
-            <p>Não tem uma conta? <Link href='/typeselection'>Clique Aqui!</Link></p>
+            <p>Não tem uma conta? <Link href='/userSelection'>Clique Aqui!</Link></p>
             {/* <p>Lista de Fornecedores <Link href='/supplier/suppliers'>Clique Aqui!</Link></p> */}
             <Login />
            

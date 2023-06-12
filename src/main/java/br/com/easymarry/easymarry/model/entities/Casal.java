@@ -22,17 +22,25 @@ public class Casal {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome_primeiraPessoa;
+    private String firstPersonName;
 
-    private String nome_segundaPessoa;
+    private String secondPersonName;
+
+    private String firstPersonCpf;
+
+    private String secondPersonCpf;
+
+    private String weddingDate;
 
     private String email;
 
+    private Date desiredServices;
+
+    private Date address;
+
+    private Date telephone;
+
     private String senha;
-
-    private Date dataCasamento;
-
-    // Outros atributos, como preferências, podem ser adicionados conforme necessário
 
     @OneToMany(mappedBy = "casal")
     private List<SolicitacaoOrcamento> solicitacoesOrcamento;

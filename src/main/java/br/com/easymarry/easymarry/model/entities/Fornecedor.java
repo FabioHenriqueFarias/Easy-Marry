@@ -23,19 +23,23 @@ public class Fornecedor {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String nome;
+    private String name;
 
     private String email;
 
+    private String cnpj;
+
+    private String sector;
+
+    private String description;
+
+    private String category;
+
+    private String telephone;
+
+    private String address;
+
     private String senha;
-
-    private String descricao;
-
-    private String categoria;
-
-    private String telefone;
-
-    private String endereco;
 
     // Outros atributos podem ser adicionados conforme necessário
 
