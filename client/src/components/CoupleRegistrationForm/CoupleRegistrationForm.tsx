@@ -46,7 +46,26 @@ export default function CoupleRegistrationForm(){
         
     // };   
 
-    // return (
+    return (
+    <form className="page-form">
+        <div className="form-group">
+
+              <input type="email" placeholder="Nome da primeira pessoa" required/>
+              <input type="number" placeholder="CPF" required/>
+              <input type="text" placeholder="Nome da segunda pessoa" required/>
+              <input type="number" placeholder="CPF" required/>
+              <input type="text" placeholder="Descrição" required/>
+              <input type="date" placeholder="Data desejada" required/>
+              <input type="tel" placeholder="Telefone" required/>
+              <input type="text" placeholder="Serviço desejado" required/>
+              <input type="text" placeholder="Endereço" required/>
+              <input type="password" placeholder="Senha" required />
+        </div>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+    );
     //     <form className="page-form" onSubmit={handleSubmit}>
     //         <div className="form-group">
     //             <input type="text" id="nome" name="nome" placeholder="Nome" value={nome} onChange={(event) => setNome(event.target.value)} required />

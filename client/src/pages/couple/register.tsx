@@ -1,4 +1,4 @@
-// import Form from "@/components/Form/Form";
+import CoupleRegistrationForm from "@/components/CoupleRegistrationForm/CoupleRegistrationForm";
 import Logo from "@/components/Logo/Logo";
 import Head from "next/head";
 
@@ -12,7 +12,7 @@ export default function UserRegistration(){
             </Head>
             <header>
                 <Logo/>
-                {/* <Form/> */}
+                <CoupleRegistrationForm />
             </header>
        </> 
     );

@@ -7,8 +7,8 @@ export default function Logo(){
             <Image 
                 src={LOGOIMAGE}
                 alt='Logo'
-                width = {410}
-                height = {50}
+                width = {300}
+                height = {30}
             />
             <h1>Easy Marry!</h1>
         </div>

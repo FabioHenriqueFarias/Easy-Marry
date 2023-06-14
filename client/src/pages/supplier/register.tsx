@@ -1,4 +1,5 @@
 import Logo from "@/components/Logo/Logo";
+import SupplierRegistrationForm from "@/components/SupplierRegistrationForm/SupplierRegistrationForm";
 import Head from "next/head";
 
 export default function SupplierRegistration(){
@@ -11,6 +12,7 @@ export default function SupplierRegistration(){
             </Head>
             <header>
                 <Logo/>
+                <SupplierRegistrationForm />
             </header>
        </> 
     );

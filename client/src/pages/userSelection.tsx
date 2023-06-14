@@ -20,7 +20,7 @@ export default function TypeSelection(){
                 </div>
                 
                 <div className="container-button-fornecedor">
-                    <button><Link href='couple/coupleregistration'>Você é um casal</Link></button>
+                    <button><Link href='couple/register'>Você é um casal</Link></button>
                 </div>
             </main>
        </> 

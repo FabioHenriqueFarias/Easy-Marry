@@ -40,6 +40,7 @@ public class Casal {
 
     private Date telephone;
 
+    @Column(columnDefinition = "BINARY(60)")
     private String senha;
 
     @OneToMany(mappedBy = "casal")

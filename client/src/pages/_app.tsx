@@ -1,7 +1,7 @@
 import '@/styles/globals.css';
 import '@/components/Login/loginForm.css';
 import '@/components/Logo/logo.css';
-// import '@/components/Form/form.css';
+import '@/components/SupplierRegistrationForm/supplierRegistrationForm.css';
 import '@/styles/index.css';
 import '@/styles/header.css';
 import '@/styles/userSelection.css';

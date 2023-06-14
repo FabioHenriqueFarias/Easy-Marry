@@ -44,7 +44,24 @@ export default function SupplierRegistrationForm(){
         
     };   
 
-    // return (
+    return (
+      <form className="page-form">
+        <div className="form-group">
+
+              <input type="text" placeholder="Nome" required/>
+              <input type="email" placeholder="Email" required/>
+              <input type="text" placeholder="Endereço" required/>
+              <input type="number" placeholder="CNPJ" required/>
+              <input type="text" placeholder="Descrição" required/>
+              <input type="tel" placeholder="Telefone" required/>
+              <input type="text" placeholder="Sentor" required/>
+              <input type="text" placeholder="Categoria" required/>
+              <input type="password" placeholder="Senha" required />
+        </div>
+
+        <button type="submit">Enviar</button>
+
+      </form>
     //     <form className="page-form" onSubmit={handleSubmit}>
     //         <div className="form-group">
     //             <input type="text" id="nome" name="nome" placeholder="Nome" value={nome} onChange={(event) => setNome(event.target.value)} required />
@@ -76,5 +93,5 @@ export default function SupplierRegistrationForm(){
 
     //         <button type="submit">Enviar</button>
     // </form>
-    // )
+    );
 }
