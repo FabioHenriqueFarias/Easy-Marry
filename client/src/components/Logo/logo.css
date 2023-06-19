@@ -4,9 +4,9 @@
     color: #E6CC85;
     text-align: center;
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
   
   .logo img {
@@ -15,12 +15,3 @@
     margin-left: 13em;
 }
 
-/* .logo{
-    font-family: 'Merriweather', serif;
-    font-size: 1em;
-    color: #E6CC85;
-
-    position: absolute;
-    top: 20%;
-    left: 42%;
-} */

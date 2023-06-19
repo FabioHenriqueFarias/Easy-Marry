@@ -1,12 +1,6 @@
-.page-home{
-  position: absolute;
-  top: 17em;
-  left: 32em;
-  z-index: 2;
-
-  width: 30em;
-  height: 30em;
-
+ .page-landing {
+  position: relative;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,56 +8,65 @@
   text-align: center;
 }
 
-.page-home h1{
-  font-size: 2em;
-  font-weight: bold;
-  color: #b6b2b2;
+.page-landing {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  margin-bottom: 1em;
 }
-
-.page-home p{
-  color: white;
-}
-
-.page-home a{
-  color: white;
-}
-
-a{
-  text-decoration: none;
-  color: #000000;
-  cursor: pointer;
-}
-
 
 .title-container {
   position: absolute;
-  top: 22em;
-  left: 8em;
-  
-  width: 22em;
-  height: 15em;
-}
-.title-container h1{
-  color: white;  
-  font-family: 'Inter', sans-serif; 
-  font-weight: 500; 
-  font-size: 3em;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 80%;
+  max-width: 400px;
 }
 
-.title-container h1 span{
-  font-weight: bold; 
+.title-container h1 {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 2.5em;
+  line-height: 1.2;
+}
+
+.title-container h1 span {
+  font-weight: bold;
   text-transform: uppercase;
-  color: #3C5098;  
+  color: #3C5098;
+} 
+
+
+.page-home {
+  margin-top: 10em;
+  width: 80%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.container-register{
-margin-top: 25px;
-
+.page-home h1 {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #b6b2b2;
+  margin-bottom: 1em;
 }
 
-.container-register p{
-font-family: 'Inter', sans-serif; 
-padding: .3em;
+.page-home p,
+.page-home a {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  padding: 0.3em;
 }
+
+.container-register {
+  margin-top: 1em;
+} 

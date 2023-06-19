@@ -39,7 +39,7 @@ public class Fornecedor {
 
     private String address;
 
-    private String senha;
+    private String password;
 
     // Outros atributos podem ser adicionados conforme necessário
 

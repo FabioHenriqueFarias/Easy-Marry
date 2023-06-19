@@ -4,6 +4,8 @@ import br.com.easymarry.easymarry.model.entities.Casal;
 import br.com.easymarry.easymarry.model.entities.Fornecedor;
 import br.com.easymarry.easymarry.service.CasalService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -26,12 +28,24 @@ public class CasalController {
     }
     @PutMapping("/{id}")
     public Casal updateCasal(@PathVariable Long id, @RequestBody Casal casal) {
-        casal.setId(id); // Define o ID do fornecedor com base no parâmetro do caminho
-        return casalService.save(casal);
+        casal.setId(id);
+        return casalService.update(casal);
     }
     @DeleteMapping("/{id}")
     public void deleteCasal(@PathVariable Long id) {
         casalService.deleteById(id);
     }
 
-}
+    @PostMapping("/login")
+    public ResponseEntity<String> login(@RequestParam("email") String email, @RequestParam("password") String password) {
+        System.out.println(email);
+        boolean isValidCredentials = casalService.validateLoginCredentials(email, password);
+
+        if (isValidCredentials) {
+            return ResponseEntity.ok("Login successful");
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid credentials");
+        }
+    }
+
+    }

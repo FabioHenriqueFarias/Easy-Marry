@@ -1,53 +1,65 @@
-.page-selection{
-    position: absolute;
-    top: 15em;
-    left: 32em;
-    z-index: 2;
-  
-    width: 30em;
-    height: 30em;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .page-selection h1{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #b6b2b2;
-    padding-bottom: 2em;
-  }
-  
-  .page-selection a{
-    color: rgb(0, 0, 0);
-  }
-
-  .page-selection button{
-
-    margin: 1em;
-    display: block;
-    width: 250px;
-    background-color: #D6E2F1;
-    color: black;
-    padding: 1em;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer; 
+.page-selection {
+  position: relative;
+  top: 10%; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
-.container-button-casal button:hover{
-  background-color: #5498C7;
+
+.selection-container {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 22em);
+  z-index: 2;
+  width: 90%;
+  max-width: 400px;
+  height: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} 
+
+.selection-container h1 {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #b6b2b2;
+  padding-bottom: 2em;
 }
 
-.container-button-fornecedor button:hover{
-  background-color: #27587A;
+.selection-container a {
+  color: #000000;
 }
-  
-a{
+
+.selection-container button {
+  margin: 1em;
+  display: block;
+  width: 100%;
+  max-width: 250px;
+  background-color: #d6e2f1;
+  color: black;
+  padding: 1em;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container-button-casal button:hover {
+  background-color: #5498c7;
+}
+
+.container-button-fornecedor button:hover {
+  background-color: #27587a;
+}
+
+a {
   text-decoration: none;
   color: #000000;
   cursor: pointer;
-}
+} 

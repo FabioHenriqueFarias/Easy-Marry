@@ -1,0 +1,10 @@
+.page-register{
+    position: relative;
+    top: 10%; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

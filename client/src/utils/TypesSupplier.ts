@@ -11,7 +11,7 @@ export type Supplier = {
     address: string,
 };
 
-export type PostSupplier = Omit<Supplier, 'password' | 'id'>;
+export type PostSupplier = Omit<Supplier, 'password' | 'cnpj' | 'sector'  | 'telephone' | 'address'>;
 
 export type EditSupplier = Omit<Supplier, 'password' | 'id' | 'cnpj'>;
 

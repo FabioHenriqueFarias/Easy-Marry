@@ -23,7 +23,7 @@ public class CasalService {
     }
 
     public Casal update(Casal casal) {
-        return casalRepository.save(casal);
+        return casalRepository.saveAndFlush(casal);
     }
 
     public void deleteById(Long id) {
@@ -34,6 +34,16 @@ public class CasalService {
         return casalRepository.findById(id).orElse(null);
     }
 
+    public boolean validateLoginCredentials(String email, String password){
+        Casal casal = casalRepository.findByEmail(email);
+        if (casal != null){
+            String storedPassword = casal.getPassword();
+            if (password.equals(storedPassword)) {
+                return true; // Credenciais válidas
+            }
+        }
 
+        return false;
+    }
 
 }

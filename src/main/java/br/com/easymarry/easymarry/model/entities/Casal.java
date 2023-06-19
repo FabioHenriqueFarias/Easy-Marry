@@ -1,12 +1,8 @@
 package br.com.easymarry.easymarry.model.entities;
 
 
-
 import jakarta.persistence.*;
 import lombok.*;
-
-//import javax.persistence.*;
-import java.util.Date;
 import java.util.List;
 
 @AllArgsConstructor
@@ -34,14 +30,13 @@ public class Casal {
 
     private String email;
 
-    private Date desiredServices;
+    private String desiredServices;
 
-    private Date address;
+    private String address;
 
-    private Date telephone;
+    private String telephone;
 
-    @Column(columnDefinition = "BINARY(60)")
-    private String senha;
+    private String password;
 
     @OneToMany(mappedBy = "casal")
     private List<SolicitacaoOrcamento> solicitacoesOrcamento;
